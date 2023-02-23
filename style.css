@@ -323,6 +323,14 @@ section {
   color: #fff;
 }
 
+.contact-link {
+  color: crimson;
+  font-size: 1.8rem;
+}
+.contact-link:hover {
+  color: #fff;
+}
+
 .contact .row {
   display: flex;
   align-items: center;

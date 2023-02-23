@@ -359,6 +359,14 @@ section{
           }
         }
       }
+      .contact-link{
+        color:crimson;
+        font-size: 1.8rem;
+
+        &:hover{
+          color:$white;
+        }
+      }
       .contact{
 
         .row{
