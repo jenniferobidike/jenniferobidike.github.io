@@ -209,14 +209,15 @@ section {
 }
 
 .count-container {
-  flex: 1 1 30rem;
+  flex: 1 1 42rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding-top: -5rem;
 }
 .count-container .box {
-  flex: 1 1 25rem;
-  padding: 1rem 2rem;
+  flex: 1 1 20rem;
+  padding: 3rem 4rem;
   border-radius: 1rem;
   background: #1a1a1a;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
@@ -268,15 +269,15 @@ section {
 }
 .portfolio .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
 .portfolio .box-container .box {
-  height: 30rem;
+  height: 40rem;
   overflow: hidden;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .portfolio .box-container .box:hover .content {
   transform: translateY(0%);
@@ -321,6 +322,74 @@ section {
 }
 .portfolio .box-container .box .content a:hover {
   color: #fff;
+}
+
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #1a1a1a;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box .images {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  max-width: 33.333%;
+  padding: 0 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.blogs .box-container .box .content .icons {
+  position: relative;
+  top: -1rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: inline-block;
+  background: crimson;
+}
+.blogs .box-container .box .content .icons a {
+  font-size: 1.4rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+.blogs .box-container .box .content .icons a:hover {
+  color: crimson;
+}
+.blogs .box-container .box .content .icons a i {
+  padding-right: 0.5rem;
+  color: crimson;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: normal;
+}
+.blogs .box-container .box .content p {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+  line-height: 2;
+  font-weight: 500;
 }
 
 .contact-link {

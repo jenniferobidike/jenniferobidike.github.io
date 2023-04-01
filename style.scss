@@ -232,14 +232,15 @@ section{
     }
 }
     .count-container{
-        flex: 1 1 30rem;
+        flex: 1 1 42rem;
         display: flex;
         flex-wrap: wrap;
         gap:2rem;
+        padding-top: -5rem;
   
         .box{
-          flex:1 1 25rem;
-          padding: 1rem 2rem;
+          flex:1 1 20rem;
+          padding: 3rem 4rem;
           border-radius: 1rem;
           background: $light-bg;
           box-shadow: $box-shadow;
@@ -296,14 +297,14 @@ section{
         text-align: center;
       
         .box-container{
-          @include grid(31rem);
+          @include grid(33rem);
           margin-bottom: 2rem;
       
           .box{
-            height: 30rem;
+            height: 40rem;
             overflow:hidden;
             position: relative;
-            border-radius: 10px;
+            border-radius: 5px;
       
             &:hover{
               .content{
@@ -354,6 +355,89 @@ section{
                 &:hover{
                   color:$white;
                 }
+              } 
+            }
+          }
+        }
+      }
+
+      .blogs{
+
+        .box-container{
+          @include grid(100rem);
+      
+          .box{
+            text-align: center;
+            padding:0.5rem;
+            border-radius: .5rem;
+            background: $light-bg;
+            box-shadow: $box-shadow;
+      
+            &:hover .image img{
+              transform: scale(1.2);
+            }
+            .images {
+              display: flex;
+              flex-wrap: wrap;
+            padding: 30px;
+          }
+    
+      
+            .image{
+              height: 25rem;
+              max-width: 33.333%;
+              padding: 0 10px;
+              width:100%;
+              height: 100%;
+              border-radius: .5rem;
+              overflow:hidden;
+      
+              img{
+                height: 100%;
+                width:100%;
+                object-fit: cover;
+                transition: .2s linear;
+              }
+            }
+      
+            .content{
+      
+              .icons{
+                position: relative;
+                top:-1rem;
+                border-radius: .5rem;
+                padding:1.5rem;
+                display: inline-block;
+                background: $crimson;
+      
+                a{
+                  font-size: 1.4rem;
+                  margin:0 1rem;
+                  color:$white;
+      
+                  &:hover{
+                    color:$crimson;
+                  }
+      
+                  i{
+                    padding-right: .5rem;
+                    color:$crimson;
+                  }
+                }
+              }
+      
+              h3{
+                font-size: 3rem;
+                color:$white;
+                font-weight: normal;
+              }
+      
+              p{
+                font-size: 2rem;
+                color:$white;
+                padding:1rem 0;
+                line-height: 2;
+                font-weight: 500;
               }
             }
           }
