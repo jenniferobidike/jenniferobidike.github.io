@@ -219,12 +219,12 @@ section {
   flex: 1 1 20rem;
   padding: 3rem 4rem;
   border-radius: 1rem;
-  background: #1a1a1a;
+  background: crimson;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 .count-container .box h3 {
   font-size: 2.5rem;
-  color: crimson;
+  color: white;
 }
 .count-container .box p {
   font-size: 1.4rem;
