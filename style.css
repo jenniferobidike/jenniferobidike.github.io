@@ -44,6 +44,8 @@ section {
   color: #fff;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -56,7 +58,8 @@ section {
   text-align: center;
   font-size: 3.5vw;
   color: #fff;
-  margin-top: 1.5rem;
+  margin: 0;
+  padding: 0;
   margin-bottom: 3rem;
   font-weight: 700;
   text-transform: uppercase;
