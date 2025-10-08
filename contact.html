@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="icon" type="image/png" href="/images/jen favicon.png">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    
+<!-- navbar section starts  -->
+
+<nav class="navbar">
+    <a href="index.html"> <i class="fas fa-home"></i> <span>Home</span> </a>
+    <a href="about.html"> <i class="fas fa-user"></i> <span>About</span> </a>
+    <a href="portfolio.html"> <i class="fas fa-briefcase"></i> <span>Portfolio</span> </a>
+    <a href="contact.html"> <i class="fas fa-address-book"></i> <span>Contact</span> </a>
+</nav>
+
+<!-- navbar section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+<h1 class="heading"> contact <span>me</span> </h1>
+
+<div class="row">
+
+    <div class="info-container">
+
+        <p>Feel free to contact me by submitting the form below and I will get back to you as soon as possible.</p>
+
+    <form name="submit-to-google-sheet">
+
+        <div class="inputBox">
+           <label class="label" for="name">Name</label>
+            <input value="Your name" name="Name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="inputBox">
+           <label class="label" for="email">Email</label>
+           <input value="Your email" type="email" name="Email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="inputBox">
+            <label class="label" for="message">Message</label>
+            <textarea name="Message" placeholder="Your message" id="" cols="30" rows="10"></textarea required>
+        </div>
+        <span id="msg"></span>
+
+        <div class="align-btn"><input type="submit" value="send message" class="btn"></div>
+        
+
+    </form>
+    </div>
+
+</div>
+
+</section>
+<footer>
+    <div class="socials">
+        <div class="share">
+            <a href="mailto: chanteljennifer101@gmail.com" rel="noreferrer" target="_blank" class="fas fa-envelope"></a>
+            <a href="https://web.facebook.com/profile.php?id=100008439063500"  rel="noreferrer" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://github.com/jenniferobidike" target="_blank" rel="noreferrer" class="fab fa-github"></a>
+            <a href="https://www.linkedin.com/in/jenniferobidike/"  rel="noreferrer" target="_blank" class="fab fa-linkedin"></a>
+        </div>
+    </div>
+<div class="credit">
+    <p>&copy 2025. Designed and Developed by <strong>Jennifer Obidike</strong></p>
+
+</div>
+</footer>
+
+<!-- contact section ends -->
+
+</body>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwN8bHMjDIDJ-u6Z8LP3pKEnJU8JxhlBd5BvQjilYI54CLpMPQIKN90Wa8cxV9jw4e-/exec'
+    const form = document.forms["submit-to-google-sheet"]
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Message sent successfully"
+        })
+        setTimeout(function(){
+            msg.innerHTML=''
+        },5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</html>
