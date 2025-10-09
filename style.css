@@ -590,7 +590,8 @@ footer .credit strong {
   }
   .btn {
     width: 40%;
-    padding-right: 2rem;
+    padding: 0.7rem;
+    text-align: center;
     font-size: 1.5rem; 
   }
   .headerport span
