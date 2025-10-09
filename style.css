@@ -584,4 +584,18 @@ footer .credit strong {
   html {
     font-size: 50%;
   }
+  .align-btn {
+    text-align: center;
+    font-size: small;
+  }
+  .btn {
+    width: 40%;
+    padding: 1rem 2rem;
+    font-size: 1.5rem; 
+  }
+  .headerport span
+  {
+    font-size: 6vw;
+  }
+
 }/*# sourceMappingURL=style.css.map */
